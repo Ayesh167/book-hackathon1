@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+        #chatbox { flex-grow: 1; padding: 10px; overflow-y: auto; border-bottom: 1px solid #eee; }
+        .message { margin-bottom: 10px; }
+        .message.user { text-align: right; color: blue; }
+        .message.bot { text-align: left; color: green; }
+        #input-form { display: flex; padding: 10px; border-top: 1px solid #eee; }
+        #user-input { flex-grow: 1; padding: 8px; border: 1px solid #ddd; border-radius: 4px; margin-right: 10px; }
+        #send-button { padding: 8px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        #send-button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div id="chatbox"></div>
+    <form id="input-form">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button type="submit" id="send-button">Send</button>
+    </form>
+
+    <script>
+        const chatbox = document.getElementById('chatbox');
+        const userInput = document.getElementById('user-input');
+        const inputForm = document.getElementById('input-form');
+
+        function appendMessage(sender, text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender);
+            messageDiv.innerText = text;
+            chatbox.appendChild(messageDiv);
+            chatbox.scrollTop = chatbox.scrollHeight; // Scroll to bottom
+        }
+
+        inputForm.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            appendMessage('user', 'You: ' + message);
+            userInput.value = '';
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+                const data = await response.json();
+                appendMessage('bot', 'Bot: ' + data.response);
+            } catch (error) {
+                console.error('Error sending message:', error);
+                appendMessage('bot', 'Bot: Sorry, something went wrong.');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+{
+  "label": "The Sentient Machine: AI & Humanoid Robotics",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "An advanced guide to integrating AI with humanoid robotics using ROS 2, Gazebo, Unity, and NVIDIA Isaac."
+  }
+}
