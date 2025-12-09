@@ -1,0 +1,28 @@
+{
+  "id": "the-sentient-machine/chapter-3-isaac",
+  "title": "3. The AI-Robot Brain",
+  "description": "Chapter 3: The AI-Robot Brain",
+  "source": "@site/docs/the-sentient-machine/03-chapter-3-isaac.md",
+  "sourceDirName": "the-sentient-machine",
+  "slug": "/the-sentient-machine/chapter-3-isaac",
+  "permalink": "/docs/the-sentient-machine/chapter-3-isaac",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/the-sentient-machine/03-chapter-3-isaac.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "3. The AI-Robot Brain"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2. The Digital Twin",
+    "permalink": "/docs/the-sentient-machine/chapter-2-digital-twins"
+  },
+  "next": {
+    "title": "4. From Language to Legacy",
+    "permalink": "/docs/the-sentient-machine/chapter-4-vla"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "the-sentient-machine/chapter-4-vla",
+  "title": "4. From Language to Legacy",
+  "description": "Chapter 4: From Language to Legacy",
+  "source": "@site/docs/the-sentient-machine/04-chapter-4-vla.md",
+  "sourceDirName": "the-sentient-machine",
+  "slug": "/the-sentient-machine/chapter-4-vla",
+  "permalink": "/docs/the-sentient-machine/chapter-4-vla",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/the-sentient-machine/04-chapter-4-vla.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "4. From Language to Legacy"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3. The AI-Robot Brain",
+    "permalink": "/docs/the-sentient-machine/chapter-3-isaac"
+  },
+  "next": {
+    "title": "Tutorial - Extras",
+    "permalink": "/docs/category/tutorial---extras"
+  }
+}

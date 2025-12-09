@@ -1,0 +1,28 @@
+{
+  "id": "the-sentient-machine/introduction",
+  "title": "Foreword - The Sentient Machine",
+  "description": "The Sentient Machine",
+  "source": "@site/docs/the-sentient-machine/00-introduction.md",
+  "sourceDirName": "the-sentient-machine",
+  "slug": "/the-sentient-machine/introduction",
+  "permalink": "/docs/the-sentient-machine/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/the-sentient-machine/00-introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Foreword - The Sentient Machine"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Sentient Machine: AI & Humanoid Robotics",
+    "permalink": "/docs/category/the-sentient-machine-ai--humanoid-robotics"
+  },
+  "next": {
+    "title": "1. The Robotic Nervous System",
+    "permalink": "/docs/the-sentient-machine/chapter-1-ros2"
+  }
+}
